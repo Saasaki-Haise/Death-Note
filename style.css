@@ -36,28 +36,6 @@ header nav img {
     height: 750px;
     position: relative;
 }
-#home-container #logo-fleche{
-    opacity: 0.8;
-    height: 110px;
-    width: 110px;
-    position: absolute;
-    top: 600px;
-    left: 880px;
-    z-index: 1;
-    animation: infinite down;
-    animation-duration: 1s;
-}
-@keyframes down {
-    0% {
-        transform: translateY(-20px);
-    }
-    50% {
-        transform: translateY(-10px);
-    }
-    100% {
-        transform: translateY(-20px);
-    }
-}
 #home-container img {
     height: auto;
     width: 100%;
@@ -74,20 +52,6 @@ header nav img {
     font-size: 70px;
     animation: zoom infinite 2s;
 }
-
-@keyframes zoom {
-    0% {
-      transform: scale(.9);
-    }
-
-    50% {
-        transform: scale(.905);
-    }
-  
-    100% {
-        transform: scale(.9);
-    }
-  }
 /* LIVRE */
 @import "compass/css3";
 
@@ -768,68 +732,21 @@ figcaption p {
 	color: #63707d;
 	line-height: 1.3;
 }
-
-/* Media Queries */
-@media screen and (max-width: 37.8125em) {
-	.align > li {
-		width: 100%;
-		min-height: 440px;
-		height: auto;
-		padding: 0;
-		margin: 0 0 30px 0;
-	}
-
-	.book {
-		margin: 0 auto;
-	}
-
-	figcaption {
-		text-align: center;
-		width: 320px;
-		top: 250px;
-		padding-left: 0;
-		left: -80px;
-		font-size: 90%;
-	}
-}
-
 /* INDEX2 */
 section {
     background: black;
-	height: 5500px;
-	position: relative;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
 
 .titre {
-	padding-top: 20px; 
     font-size: 70px;
-    transform: translate(0,-190px);
-    width: 100%;
-    height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
-	padding: 0;
 	text-shadow: 0 2px 6px rgba(255, 255, 255, 0.3);
 	font-family: 'Underdog', cursive;
-}
-.titre2 { 
-	padding: 0;
-	margin-top: 0px;
-    font-size: 70px;
-    width: 100%;
-    height: 300px;
-	text-shadow: 0 2px 6px rgba(255, 255, 255, 0.3);
-	font-family: 'Underdog', cursive;
-}
-#ban {
-    filter: brightness(110%);
-    height: auto;
-	width: 100%;
-	animation: bananim 5s infinite;
 }
 .ban2 {
 	margin-bottom: 0px;
@@ -838,21 +755,9 @@ section {
 	height: auto;
 	width: 80%;
 }
-@keyframes bananim {
-	0% {
-		filter: brightness(100%);
-		transform: scale(1);
-	}
-	50% {
-		filter: brightness(200%);
-		transform: scale(1.03);
-	}
-	100% {
-		filter: brightness(100%);
-		transform: scale(1);
-	}
-}
 #container {
+	margin-top: 150px;
+	border: 1px solid white;
 	position: relative;
 	transform: translateY(-150px);
 	margin-bottom: 100px;
@@ -896,8 +801,8 @@ section {
 #texte3 {
 	position: absolute;
 	font-family: 'Pompiere';
-	top: 3620px;
-	left: 330px;
+	top: 3500px;
+	left: 450px;
 	color: white;
     width: 600px;
     height: 550px;
